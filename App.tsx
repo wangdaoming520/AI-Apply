@@ -94,7 +94,7 @@ export default function App() {
     }
   };
 
-  const handleUpdateText = useCallback((id: string, field: 'dialogue' | 'scriptDescription', value: string) => {
+  const handleUpdateText = useCallback((id: string, field: 'dialogue' | 'scriptDescription' | 'characterNotes', value: string) => {
     setProject(prev => ({
       ...prev,
       panels: prev.panels.map(p => 
